@@ -1,0 +1,545 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekend-Discount HTML Email</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      background-color: #E6DAD1;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+    }
+
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      padding-bottom: 40px;
+    }
+
+    .main {
+      background-color: #ffffff;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 600px;
+      border-spacing: 0;
+      font-family: sans-serif;
+      color: #4a4a4a;
+    }
+
+    .button {
+      background-color: transparent;
+      border: 1px solid #D12673;
+      color: #000000;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+
+    }
+
+    .btn {
+      background-color: #D12673;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .ofHero {
+      position: relative;
+      background-color: #ffbecc;
+    }
+
+    .ofHero:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      background: url('img/wave.png');
+
+    }
+
+    .heroText {
+      width: 420px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .heroText strong {
+      width: 255px;
+      margin: 0 auto;
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 50px;
+    }
+
+    .heroText p {
+      width: 414px;
+      margin: 0 auto;
+      font-family: Lato;
+      color: #D12673;
+      font-size: 50px;
+    }
+
+    .model {
+
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .model-container {
+      display: inline-block;
+
+    }
+
+    .model-container .model1 {
+      width: 250px;
+      padding: 20px 5px;
+      text-align: center;
+
+    }
+
+    .model-container .model1 img {
+      width: 230px;
+
+    }
+
+    .model-container .model2 {
+      width: 340px;
+      padding: 20px;
+
+    }
+
+    .model-container .model2 p {
+      font-size: 14px;
+      padding: 20px 0px;
+      font-family: "Open Sans", sans-serif;
+
+    }
+
+    .txt {
+      width: 244px;
+      font-size: 14px;
+      font-family: Lato;
+    }
+
+    .products {
+
+      width: 600px;
+      padding: 20px;
+    }
+
+    .product-container {
+      display: inline-block;
+      /* text-align: center; */
+    }
+
+    .product-container .product {
+      text-align: center;
+      padding: 5px 15px;
+    }
+
+    .product-container .product img {
+      width: 155px;
+    }
+
+    .banner-section {
+      width: 600px;
+      padding: 20px 10px;
+    }
+
+    .spans {
+      display: flex;
+      justify-content: space-evenly;
+      font-family: "Open Sans";
+      font-size: 14px;
+    }
+
+    .footer-section {
+      width: 600px;
+      padding: 20px 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .main {
+        width: 300px;
+      }
+
+      .hero-section {
+        width: 300px;
+      }
+
+      .heroText strong {
+
+        font-size: 30px;
+      }
+
+      .heroText p {
+        width: 300px;
+
+        font-size: 30px;
+      }
+
+      .model-container,
+      .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .model-container .model1 {
+        width: 300px;
+        text-align: left;
+        padding-left: 20px;
+
+      }
+
+      .model-container .model1 img {
+        width: 280px;
+      }
+
+      .txt {
+        width: 284px;
+        font-size: 14px;
+        font-family: Lato;
+      }
+
+      .products {
+        width: 420px;
+      }
+
+      .product-container .product {
+        width: 300px;
+        padding: 10px 10px;
+      }
+
+      .product-container .product img {
+        width: 280px;
+        text-align: center;
+      }
+
+      .banner-section {
+        width: 420px;
+        padding: 20px 10px;
+      }
+
+      .footer-section {
+        width: 420px;
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <center class="wrapper">
+
+
+    <table class="main" width="100%">
+
+
+      <!-- Heading -->
+      <tr>
+        <td class="hero-section" style="text-align: center;">
+          <a href="#"><img src="img/logo.png" alt="Logo" width="150"></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="ofHero" style=" height: 400px; background-image: url('img/white-red.svg');">
+          <div class="heroText">
+
+            <p>DON'T MISS OUR</p>
+            <strong>WEEKEND</strong>
+            <p>SPECIAL OFFER</p>
+          </div>
+        <td>
+        </td>
+      </tr>
+      <!-- Two column section -->
+      <tr>
+        <table class="model" style="background-color: #E1F5FC;">
+          <tr class="model-container">
+            <td class="model1">
+              <img src="img/model.png" alt="Model">
+            </td>
+
+            <td class="model2">
+              <strong style="font-family: Helvetica, sans-serif; font-size: 20px; color: #555555;">ABOUT THE SALE
+              </strong>
+              <p style="color: #555555;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+              </p>
+              <div style="font-size: 14px; color: #D12673; padding: 0px 5px 30px 5px;">Start from $11.00</div>
+
+              <a href="#" class="button">Read More</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <!-- Two column section -->
+      <tr>
+        <table class="model" style="background-color: #ffffff;">
+          <tr class="model-container">
+            <td class="model1">
+              <img src="img/Product-Images-01.png" alt="Model">
+            </td>
+
+            <td class="model2">
+              <div style="font-family: Lato, sans-serif; font-size: 20px; color: #D12673; padding-bottom: 10px;">40% OFF
+              </div>
+              <div style="font-family: Lato, sans-serif; font-size: 18px; color: #555555;">Deep cleaning</div>
+              <p class="txt" style="color: #555555;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+              </p>
+              <div style="font-size: 14px; color: #D12673; padding: 0px 5px 30px 5px;">Start from $18.00</div>
+
+              <a href="#" class="button">Shop Now</a>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <!-- Two column section -->
+      <tr>
+        <table class="model" style="background-color: #ffffff;">
+          <tr class="model-container">
+
+            <td class="model2">
+              <div style="font-family: Lato, sans-serif; font-size: 20px; color: #D12673; padding-bottom: 10px;">40% OFF
+              </div>
+              <div style="font-family: Lato, sans-serif; font-size: 18px; color: #555555;">Fairness cream</div>
+              <p class="txt" style="color: #555555;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+              </p>
+              <div style="font-size: 14px; color: #D12673; padding: 0px 5px 30px 5px;">Start from $11.00</div>
+              <a href="#" class="button">Shop Now</a>
+            </td>
+
+            <td class="model1">
+              <img src="img/Product-Images-02.png" alt="Model">
+            </td>
+
+
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <!-- Two column section -->
+      <tr>
+        <table class="model" style="background-color: #FDF1EE;">
+          <tr class="model-container">
+
+            <td class="model2">
+              <div style="font-family: Lato, sans-serif; font-size: 20px; color: #D12673; padding-bottom: 10px;">40% OFF
+              </div>
+              <div style="font-family: Lato, sans-serif; font-size: 18px; color: #555555;">Fairness cream</div>
+              <p class="txt" style="color: #555555;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+              </p>
+              <a href="#" class="button">Shop Now</a>
+            </td>
+
+            <td class="model1">
+              <img src="img/makeup.png" alt="Model">
+            </td>
+
+
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <!-- 3 column section -->
+      <tr>
+        <td>
+          <table class="products" style="background-color: #ffffff; margin-top: -5px;">
+            <tr>
+              <td style="text-align: center; ">
+                <h3 style="font-family: Lato; font-size: 22px; color: #555555;">RECOMMENDED FOR YOU</h3>
+              </td>
+            </tr>
+            <tr class="product-container">
+              <td class="product">
+                <div>
+
+                  <img src="img/brush_smaller.png" alt="">
+                </div>
+                <div style="font-family: Open Sans; font-size: 16px;color: #000000; padding: 10px 0px;"> <strong>Buki
+                    Brush</strong> </div>
+                <div
+                  style="font-family: Open Sans; font-size: 14px;color: #D12673; padding: 10px 0px; font-weight: 400;">
+                  <strong>$25.00</strong></div>
+              </td>
+              <td class="product">
+                <div>
+
+                  <img src="img/lipstick_smaller.png" alt="">
+                </div>
+                <div style="font-family: Open Sans; font-size: 16px;color: #000000; padding: 10px 0px;"> <strong>Lip
+                    Gloss</strong> </div>
+                <div
+                  style="font-family: Open Sans; font-size: 14px;color: #D12673; padding: 10px 0px; font-weight: 400;">
+                  <strong>$8.00</strong></div>
+              </td>
+              <td class="product">
+                <div>
+
+                  <img src="img/airbrush_smaller.png" alt="">
+                </div>
+                <div style="font-family: Open Sans; font-size: 16px;color: #000000; padding: 10px 0px;">
+                  <strong>Airbrush Mineral
+                  </strong> </div>
+                <div style="font-family: Open Sans; font-size: 14px;color: #D12673; 
+                  padding: 10px 0px; font-weight: 400;"><strong>$15.00</strong></div>
+              </td>
+            </tr>
+            <tr class="product-container">
+              <td class="product">
+                <div>
+
+                  <img src="img/product_smaller.png" alt="">
+                </div>
+                <div style="font-family: Open Sans; font-size: 16px;color: #000000; padding: 10px 0px;">
+                  <strong>Exfoliator Scrub</strong> </div>
+                <div
+                  style="font-family: Open Sans; font-size: 14px;color: #D12673; padding: 10px 0px; font-weight: 400;">
+                  <strong>$11.00</strong></div>
+              </td>
+              <td class="product">
+                <div>
+
+                  <img src="img/lip_color_smaller.png" alt="">
+                </div>
+                <div style="font-family: Open Sans; font-size: 16px;color: #000000; padding: 10px 0px;">
+                  <strong>Transfer Lip Colo</strong> </div>
+                <div
+                  style="font-family: Open Sans; font-size: 14px;color: #D12673; padding: 10px 0px; font-weight: 400;">
+                  <strong>$6.00</strong></div>
+              </td>
+              <td class="product">
+                <div>
+
+                  <img src="img/eeling_smaller.png" alt="">
+                </div>
+                <div style="font-family: Open Sans; font-size: 16px;color: #000000; padding: 10px 0px;">
+                  <strong>Balm Solution</strong> </div>
+                <div
+                  style="font-family: Open Sans; font-size: 14px;color: #D12673; padding: 10px 0px; font-weight: 400;">
+                  <strong>$60.00</strong></div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Two column section -->
+      <tr>
+        <table class="model" style="background-color: #E1F5FC;">
+          <tr class="model-container">
+
+
+            <td class="model1">
+              <img src="img/makeup_brushes.png" alt="Model">
+            </td>
+
+            <td class="model2">
+              <div style="font-family: Lato, sans-serif; font-size: 20px; color: #D12673; padding-bottom: 10px;">ONLINE
+                EXCLUSIVE</div>
+              <div
+                style="font-family: Lato, sans-serif; font-size: 26px; color: #000000; padding: 40px 1px; font-weight: 600;">
+                FAIRNESS BRUSHES FREE GIFT
+              </div>
+              <a href="#" class="button">Shop Now</a>
+            </td>
+
+
+
+          </tr>
+        </table>
+        </td>
+      </tr>
+
+      <!-- Heading -->
+      <tr>
+
+        <table class="banner-section" style="text-align: center; background-color: #FFBDCB;">
+          <tr>
+            <td class="spans">
+              <span>Face makeup</span>
+              <span>Lip makeup</span>
+              <span>Eye makeup</span>
+              <span>Brushes & Tools</span>
+            </td>
+          </tr>
+        </table>
+
+      </tr>
+      <!-- Footer -->
+
+      <tr>
+        <table class="footer-section" style="text-align: center; background-color: #ffffff;">
+          <tr>
+            <td>
+              <div style="padding-bottom: 40px; font-size: 20px; font-family: Poppins; font-weight: 600;"><span>Trouble
+                  with checkout? We're here to help!</span></div>
+              <div><a href="#" class="btn">Contact Us</a></div>
+            </td>
+
+          </tr>
+          <tr>
+            <td style="padding-top: 30px;">
+              <a href="#"><img src="img/facebook2x.png" alt="" width="32"></a>
+              <a href="#"><img src="img/twitter2x.png" alt="" width="32"></a>
+              <a href="#"><img src="img/youtube2x.png" alt="" width="32"></a>
+              <a href="#"><img src="img/instagram2x.png" alt="" width="32"></a>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 14px; font-family: Poppins;">
+              <div>
+                <p>Copyright © 2021, All rights reserved</p>
+              </div>
+              <div>
+                <p>Changed your mind? You can <a href="#">Unsubscribe</a> at any time</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </tr>
+
+    </table>
+
+
+
+  </center>
+</body>
+
+</html>
